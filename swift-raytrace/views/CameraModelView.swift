@@ -46,8 +46,8 @@ class CameraModelView {
         let cfRawData = CFDataCreate(kCFAllocatorDefault, rawBytes, rawBytes.count)!
         let cfDataProvider = CGDataProvider.init(data: cfRawData)!
         //Use viewport info for image size.
-        let imageWidth: Int
-        let imageHeight: Int
+        let imageWidth = self.model.viewportWidth
+        let imageHeight = self.model.viewportHeight
         
         //Now create our CGImage...
         /*
@@ -66,7 +66,7 @@ class CameraModelView {
         let cgImage: CGImage
         
         //Now convert that to an NSImage.
-        let result = NSImage.init(cgImage: CGImage, size: NSMakeSize(imageWidth, imageHeight))
+        let result = NSImage.init(cgImage: cgImage, size: NSMakeSize(CGFloat(imageWidth), CGFloat(imageHeight)))
         
         return result
     }
