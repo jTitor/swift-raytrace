@@ -766,6 +766,10 @@
                             <constraint firstAttribute="trailing" secondItem="dUh-l4-GG4" secondAttribute="trailing" id="jF6-H7-wb5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="renderView" destination="dl7-Ml-P4h" id="7Ue-qc-MJp"/>
+                        <outlet property="statusLabel" destination="nrL-vp-gr6" id="peM-X7-Wuw"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

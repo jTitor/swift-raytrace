@@ -10,7 +10,11 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    //TODO: Hook content view and status label to IBOutlet properties here.
+    //Content outlets:
+    //The view that displays the raytracer's rendering.
+    @IBOutlet weak var renderView: NSImageView?
+    //A text field displaying the app's status.
+    @IBOutlet weak var statusLabel: NSTextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
