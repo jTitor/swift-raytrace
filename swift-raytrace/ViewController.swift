@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    //TODO: Hook content view and status label to IBOutlet properties here.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

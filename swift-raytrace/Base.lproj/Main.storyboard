@@ -706,25 +706,25 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="swift_raytrace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="441"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUh-l4-GG4" userLabel="Content Container">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="417"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="441"/>
                                 <subviews>
-                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Ml-P4h">
-                                        <rect key="frame" x="0.0" y="28" width="480" height="389"/>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Ml-P4h" userLabel="Render Image View">
+                                        <rect key="frame" x="0.0" y="36" width="480" height="405"/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="zOP-Hn-73t"/>
                                     </imageView>
-                                    <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-v1-sgE">
-                                        <rect key="frame" x="0.0" y="0.0" width="480" height="20"/>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-v1-sgE">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="28"/>
                                         <view key="contentView" id="2i5-IN-k8Q">
-                                            <rect key="frame" x="1" y="1" width="478" height="18"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="28"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nrL-vp-gr6">
-                                                    <rect key="frame" x="6" y="1" width="466" height="17"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="dne-Qu-QJa">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nrL-vp-gr6" userLabel="Status Label">
+                                                    <rect key="frame" x="6" y="6" width="468" height="17"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Ready to render." id="dne-Qu-QJa">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -738,8 +738,9 @@
                                             </constraints>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Kep-j7-bjk"/>
+                                            <constraint firstAttribute="height" constant="28" id="Kep-j7-bjk"/>
                                         </constraints>
+                                        <color key="fillColor" name="underPageBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </box>
                                 </subviews>
                                 <constraints>
