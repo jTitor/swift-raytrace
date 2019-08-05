@@ -12,9 +12,9 @@ class ViewController: NSViewController {
 
     //Content outlets:
     //The view that displays the raytracer's rendering.
-    @IBOutlet weak var renderView: NSImageView?
+    @IBOutlet var renderView: NSImageView?
     //A text field displaying the app's status.
-    @IBOutlet weak var statusLabel: NSTextField?
+    @IBOutlet var statusLabel: NSTextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
